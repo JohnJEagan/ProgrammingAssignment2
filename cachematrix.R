@@ -3,11 +3,10 @@ makeCacheMatrix <- function(x = matrix())
         ## This function stores a list of four functions that 
         ## can cache (set) and retreive (get) the matrix and its inverse
         ## as follows:
-        ## (1) set the square matrix entries (or it elements).
-        ## (2) get the square matrix entries (or it elements).
-        ## (3) set the value of the matrix inverse.
-        ## (4) get the value of the matrix inverse
-        
+                ## (1) set the square matrix entries (or it elements).
+                ## (2) get the square matrix entries (or it elements).
+                ## (3) set the value of the matrix inverse.
+                ## (4) get the value of the matrix inverse
         
         ## "set" is a function that changes the matrix stored in the main function.
         ## We don't need to use the function unless we want to change the matrix.
@@ -40,13 +39,8 @@ makeCacheMatrix <- function(x = matrix())
              setinverse = setinverse,
              getinverse = getinverse)
         
-        
-        
-        
 }
 
-
-## Write a short comment describing this function
 
 cacheSolve <- function(x, ...)
 {
@@ -67,7 +61,7 @@ cacheSolve <- function(x, ...)
         data <- x$get() 
         im <- solve(data,...) 
         
-        ## The setinverse places the inverse matrixin the cache
+        ## The setinverse places the inverse matrixin the cache.
         
         x$setinverse(im)
         
